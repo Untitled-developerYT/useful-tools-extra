@@ -84,6 +84,7 @@ if (isset($_GET['action'])) {
             max-width: 80%;
             position: relative;
             background-color: #fff;
+            overflow-y: auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         #messageContainer {
