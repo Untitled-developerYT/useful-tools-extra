@@ -8,8 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['updateSettings'])) {
 }
 
 // Read cookies into variables
-$botToken = $_COOKIE['botToken'] ?? '';
-$channelId = $_COOKIE['channelID'] ?? '';
+$botToken = $_COOKIE['botToken'] ?? getenv('TOKEN');
+$channelId = $_COOKIE['channelID'] ?? getenv('CHANNEL');
 
 // Handle API actions
 if (isset($_GET['action'])) {
