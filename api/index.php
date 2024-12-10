@@ -410,7 +410,7 @@ if (isset($_GET['action'])) {
         fetchMessages(); // Initial fetch
 
         function getRandomInt(max) {
-  return Math.floor(Math.random() * (max - 1) + 1);
+  return Math.floor(Math.random() * max) + 1;
 }
 
 randIntForm.addEventListener("submit", event => {
