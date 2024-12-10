@@ -268,11 +268,12 @@ if (isset($_GET['action'])) {
     </style>
 </head>
 <body>
+<div class="container">
 <form id="randIntForm">
             <input type="number" id="randIntInput" placeholder="Type a number..." required>
             <button type="submit">Send</button>
         </form>
-<div class="container">
+
 <button id="openPopup">Open Popup</button>
 
 <!-- Overlay -->
