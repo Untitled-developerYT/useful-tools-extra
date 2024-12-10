@@ -268,6 +268,10 @@ if (isset($_GET['action'])) {
     </style>
 </head>
 <body>
+<form id="randIntForm">
+            <input type="number" id="randIntInput" placeholder="Type a number..." required>
+            <button type="submit">Send</button>
+        </form>
 <div class="container">
 <button id="openPopup">Open Popup</button>
 
@@ -403,9 +407,18 @@ if (isset($_GET['action'])) {
         setInterval(fetchMessages, 5000);
         fetchMessages(); // Initial fetch
 
+        function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
-
-
+randIntFourm.addEventListener("submit", event => {
+            event.preventDefault(); // Prevent form from reloading the page
+            const content = randIntInput.value.trim();
+            if (content) {
+                getRandomInt(content); // Send the message
+                randIntInput.value = ""; // Clear the input
+            }
+        });
 
 
 
