@@ -174,7 +174,7 @@ if (isset($_GET['action'])) {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
+            overflow-y: auto;
             z-index: 1000;
             max-height: 80vh;
         }
@@ -234,6 +234,7 @@ if (isset($_GET['action'])) {
 
         .popup-content.active {
             display: block;
+            overflow-y: auto;
         }
 
         .overlay {
