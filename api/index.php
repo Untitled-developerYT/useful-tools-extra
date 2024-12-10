@@ -73,6 +73,8 @@ if (isset($_GET['action'])) {
             margin: 0;
             padding: 0;
             display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
         }
         .container {
@@ -281,8 +283,7 @@ if (isset($_GET['action'])) {
 </form>
 <p id="int"></p>
 <div class="footer">
-<button id="openPopup" style="background: url('../assets/icon.png') no-repeat center center; background-size: cover; width: 50px; height: 50px; border: none; cursor: pointer;" aria-label="Click me"></button>
-<p style="font-size: 4px;">Icon by O.moonstd</p>
+<button id="openPopup" style="background: url('../assets/icon.png') no-repeat center center; background-size: cover; width: 25px; height: 25px; border: none; cursor: pointer;" aria-label="Click me"></button>
 </div>
 <!-- Overlay -->
 <div class="overlay" id="popupOverlay"></div>
