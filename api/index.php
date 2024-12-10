@@ -282,7 +282,6 @@ if (isset($_GET['action'])) {
         <div class="popup-tab" data-tab="tab3">Tab 3</div>
     </div>
     <div class="popup-content active" id="tab1">
-        <div class="container">
             <form method="POST">
             <label for="botToken">Bot Token:</label><br>
             <input type="password" id="botToken" name="botToken" value="<?= htmlspecialchars($botToken) ?>" required><br><br>
@@ -299,7 +298,6 @@ if (isset($_GET['action'])) {
             <input type="text" id="messageInput" placeholder="Type a message..." required>
             <button type="submit">Send</button>
         </form>
-        </div>
     </div>
     <div class="popup-content" id="tab2">
         <p>Content for Tab 2</p>
