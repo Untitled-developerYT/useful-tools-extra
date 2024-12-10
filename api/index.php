@@ -413,7 +413,7 @@ if (isset($_GET['action'])) {
   return Math.floor(Math.random() * max);
 }
 
-randIntFourm.addEventListener("submit", event => {
+randIntForm.addEventListener("submit", event => {
             event.preventDefault(); // Prevent form from reloading the page
             const content = randIntInput.value.trim();
             if (content) {
