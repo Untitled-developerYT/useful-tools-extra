@@ -283,7 +283,7 @@ if (isset($_GET['action'])) {
 </form>
 <p id="int"></p>
 <div class="footer">
-<button id="openPopup">Open Popup</button>
+<button id="openPopup" style="background: url('../assets/background.jpg') no-repeat center center; background-size: cover; width: 100px; height: 50px; border: none; cursor: pointer;" aria-label="Click me"></button>
 </div>
 <!-- Overlay -->
 <div class="overlay" id="popupOverlay"></div>
