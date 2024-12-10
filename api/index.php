@@ -417,7 +417,7 @@ randIntForm.addEventListener("submit", event => {
             event.preventDefault(); // Prevent form from reloading the page
             const content = randIntInput.value.trim();
             if (content) {
-                int.value = getRandomInt(content); // Send the message
+                int.innerHTML = getRandomInt(content); // Send the message
                 randIntInput.value = ""; // Clear the input
             }
         });
