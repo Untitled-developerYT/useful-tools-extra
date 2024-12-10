@@ -284,13 +284,7 @@ if (isset($_GET['action'])) {
         <div class="popup-tab" data-tab="tab3">Tab 3</div>
     </div>
     <div class="popup-content active" id="tab1">
-            <form method="POST">
-            <label for="botToken">Bot Token:</label><br>
-            <input type="password" id="botToken" name="botToken" value="<?= htmlspecialchars($botToken) ?>" required><br><br>
-            <label for="channelID">Channel ID:</label><br>
-            <input type="text" id="channelID" name="channelID" value="<?= htmlspecialchars($channelId) ?>" required><br><br>
-            <button type="submit" name="updateSettings">Save Settings</button>
-            </form>
+           
 
         <div id="messageContainer">
 
@@ -302,7 +296,13 @@ if (isset($_GET['action'])) {
         </form>
     </div>
     <div class="popup-content" id="tab2">
-        <p>Content for Tab 2</p>
+        <form method="POST">
+            <label for="botToken">Bot Token:</label><br>
+            <input type="password" id="botToken" name="botToken" value="<?= htmlspecialchars($botToken) ?>" required><br><br>
+            <label for="channelID">Channel ID:</label><br>
+            <input type="text" id="channelID" name="channelID" value="<?= htmlspecialchars($channelId) ?>" required><br><br>
+            <button type="submit" name="updateSettings">Save Settings</button>
+        </form>
     </div>
     <div class="popup-content" id="tab3">
         <div class="ad-container">
