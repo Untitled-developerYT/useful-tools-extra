@@ -108,10 +108,11 @@ if (isset($_GET['action'])) {
             display: flex;
             flex-shrink: 0;
             padding: 10px;
+            align-items: stretch;
             gap: 10px; /* Add spacing between items */
-            align-items: center;
             justify-content: space-between;
             background-color: #f1f1f1;
+            flex-direction: column;
             box-sizing: border-box;
         }
         form input {
