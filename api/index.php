@@ -272,7 +272,8 @@ if (isset($_GET['action'])) {
 <form id="randIntForm">
             <input type="number" id="randIntInput" placeholder="Type a number..." required>
             <button type="submit">Send</button>
-        </form>
+</form>
+<p id="int"></p>
 
 <button id="openPopup">Open Popup</button>
 
@@ -416,7 +417,7 @@ randIntFourm.addEventListener("submit", event => {
             event.preventDefault(); // Prevent form from reloading the page
             const content = randIntInput.value.trim();
             if (content) {
-                getRandomInt(content); // Send the message
+                int.value = getRandomInt(content); // Send the message
                 randIntInput.value = ""; // Clear the input
             }
         });
