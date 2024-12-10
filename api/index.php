@@ -228,6 +228,7 @@ if (isset($_GET['action'])) {
 
         .popup-content {
             padding: 15px;
+            overflow-y: auto;
             display: none;
         }
 
