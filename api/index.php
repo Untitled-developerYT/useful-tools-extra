@@ -174,6 +174,7 @@ if (isset($_GET['action'])) {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             z-index: 1000;
+            max-height: 80vh;
         }
 
         .popup-header {
