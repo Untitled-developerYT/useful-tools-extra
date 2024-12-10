@@ -284,7 +284,7 @@ if (isset($_GET['action'])) {
 <p id="int"></p>
 <div class="footer">
 <button id="openPopup" style="background: url('../assets/icon.png') no-repeat center center; background-size: cover; width: 100px; height: 50px; border: none; cursor: pointer;" aria-label="Click me"></button>
-<p>Icon by O.moonstd</p>
+<p style="font-size: 4px;">Icon by O.moonstd</p>
 </div>
 <!-- Overlay -->
 <div class="overlay" id="popupOverlay"></div>
