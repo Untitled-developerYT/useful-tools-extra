@@ -247,6 +247,11 @@ if (isset($_GET['action'])) {
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
+        .footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+        }
 
         .ad-container iframe,
         .ad-container img,
@@ -277,9 +282,9 @@ if (isset($_GET['action'])) {
             <button type="submit">Send</button>
 </form>
 <p id="int"></p>
-
+<div class="footer">
 <button id="openPopup">Open Popup</button>
-
+</div>
 <!-- Overlay -->
 <div class="overlay" id="popupOverlay"></div>
 </div>
