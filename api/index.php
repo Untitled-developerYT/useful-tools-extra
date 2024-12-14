@@ -8,8 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['updateSettings'])) {
 }
 
 // Read cookies into variables
-$botToken = $_COOKIE['botToken'] ?? getenv('TOKEN');
-$channelId = $_COOKIE['channelID'] ?? getenv('CHANNEL');
+$botToken = $_COOKIE['botToken'] ?? '';
+$channelId = $_COOKIE['channelID'] ?? '';
 
 // Handle API actions
 if (isset($_GET['action'])) {
@@ -285,6 +285,11 @@ if (isset($_GET['action'])) {
 <div class="footer">
 <button id="openPopup" style="background: url('../assets/icon.png') no-repeat center center; background-size: cover; width: 25px; height: 25px; border: none; cursor: pointer;" aria-label="Click me"></button>
 </div>
+
+
+
+
+
 <!-- Overlay -->
 <div class="overlay" id="popupOverlay"></div>
 </div>
